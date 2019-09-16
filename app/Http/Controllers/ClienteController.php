@@ -74,6 +74,12 @@ class ClienteController extends Controller
         
         $cliente = \App\Cliente::find($codcli);
         $cliente->nomcli = $request->get('nomcli');
+        $cliente->cpfcli = $request->get('cpfcli');
+        $cliente->endcli = $request->get('endcli');
+        $cliente->baicli = $request->get('baicli');
+        $cliente->cidcli = $request->get('cidcli');
+        $cliente->ufcli = $request->get('ufcli');
+        $cliente->telcli = $request->get('telcli');
         $cliente->save();
         
         return redirect('/cliente')->with('alterado', 'Cliente alterado com sucesso!');
