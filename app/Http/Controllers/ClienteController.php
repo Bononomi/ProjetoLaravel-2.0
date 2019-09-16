@@ -30,9 +30,17 @@ class ClienteController extends Controller
     {
         $cliente = new \App\Cliente();
         $cliente->nomcli = $request->get('nomcli');
+        $cliente->cpfcli = $request->get('cpfcli');
+        $cliente->endcli = $request->get('endcli');
+        $cliente->numcli = $request->get('numcli');
+        $cliente->baicli = $request->get('baicli');
+        $cliente->cidcli = $request->get('cidcli');
+        $cliente->ufcli = $request->get('ufcli');
+        $cliente->telcli = $request->get('telcli');
+       
         $cliente->save();
         
-        return redirect('/cliente')->with('msg', 'Categoria cadastrada com sucesso!');
+        return redirect('/cliente')->with('msg', 'Cliente cadastrado com sucesso!');
     }
 
    

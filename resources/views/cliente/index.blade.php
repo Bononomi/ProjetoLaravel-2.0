@@ -48,6 +48,7 @@
                        <td>{{$cl->endcli}}</td>
                         <td>{{$cl->numcli}}</td>
                          <td>{{$cl->baicli}}</td>
+                         <td>{{$cl->cidcli}}</td>
                           <td>{{$cl->ufcli}}</td>
                            <td>{{$cl->telcli}}</td>
                            <td>
