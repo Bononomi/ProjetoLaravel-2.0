@@ -21,13 +21,13 @@
             <input type="text" name="nomcli" id="nomcli"/><br/><br/>
             
             <label for="cpfcli">CPF</label><br/>
-            <input type="text" name="cpfcli" id="cpfcli"/><br/><br/>
+            <input type="text" name="cpfcli" maxlength="11" id="cpfcli"/><br/><br/>
             
             <label for="endcli">Endereço</label><br/>
             <input type="text" name="endcli" id="endcli"/><br/><br/>
             
             <label for="numcli">Nº</label><br/>
-            <input type="text" name="numcli" id="numcli"/><br/><br/>
+            <input type="text" name="numcli" maxlength="6" id="numcli"/><br/><br/>
             
             <label for="baicli">Bairro</label><br/>
             <input type="text" name="baicli" id="baicli"/><br/><br/>
@@ -36,10 +36,10 @@
             <input type="text" name="cidcli" id="cidcli"/><br/><br/>
             
             <label for="ufcli">UF</label><br/>
-            <input type="text" name="ufcli" id="ufcli"/><br/><br/>
+            <input type="text" name="ufcli" maxlength="2" id="ufcli"/><br/><br/>
             
             <label for="telcli">Telefone</label><br/>
-            <input type="text" name="telcli" id="telcli"/><br/><br/>
+            <input type="text" name="telcli" maxlength="14" id="telcli"/><br/><br/>
             
             
             <button type="submit">Adicionar</button>

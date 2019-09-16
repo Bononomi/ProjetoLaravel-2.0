@@ -25,13 +25,13 @@
             <input type="text" name="nomcli" id="nomcli" value="{{$cliente->nomcli}}"/><br/><br/>
             
             <label for="cpfcli">CPF</label><br/>
-            <input type="text" name="cpfcli" id="cpfcli" value="{{$cliente->cpfcli}}"/><br/><br/>
+            <input type="text" name="cpfcli" maxlength="11" id="cpfcli"  value="{{$cliente->cpfcli}}"/><br/><br/>
             
             <label for="endcli">Endereço</label><br/>
             <input type="text" name="endcli" id="endcli" value="{{$cliente->endcli}}"/><br/><br/>
             
             <label for="numcli">Nº</label><br/>
-            <input type="text" name="numcli" id="numcli" value="{{$cliente->numcli}}"/><br/><br/>
+            <input type="text" name="numcli" id="numcli" maxlength="6" value="{{$cliente->numcli}}"/><br/><br/>
             
             <label for="baicli">Bairro</label><br/>
             <input type="text" name="baicli" id="baicli" value="{{$cliente->baicli}}"/><br/><br/>
@@ -40,10 +40,10 @@
             <input type="text" name="cidcli" id="cidcli" value="{{$cliente->cidcli}}"/><br/><br/>
             
             <label for="ufcli">UF</label><br/>
-            <input type="text" name="ufcli" id="ufcli" value="{{$cliente->ufcli}}"/><br/><br/>
+            <input type="text" name="ufcli" maxlength="2" id="ufcli" value="{{$cliente->ufcli}}"/><br/><br/>
             
             <label for="telcli">Telefone</label><br/>
-            <input type="text" name="telcli" id="telcli" value="{{$cliente->telcli}}"/><br/><br/>
+            <input type="text" name="telcli" maxlength="14" id="telcli" value="{{$cliente->telcli}}"/><br/><br/>
             
             
             <button type="submit">Editar</button>
