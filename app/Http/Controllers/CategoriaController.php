@@ -24,7 +24,7 @@ class CategoriaController extends Controller
         $categoria->nomcat = $request->get('nomcat');
         $categoria->save();
         
-        return redirect('/categoria')->with('msg', 'Categoria cadastrada com sucesso!');
+      return "true";
         
     }
     
@@ -33,7 +33,7 @@ class CategoriaController extends Controller
         $categoria = \App\Categoria::find($codcat);
         $categoria->delete();
         
-        return redirect('/categoria')->with('catEliminada', 'Categoria eliminada');
+        return "true";
         
     }
     
